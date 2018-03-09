@@ -1,0 +1,5 @@
+<h1>Сегодня</h1>
+<div class="events" *ngFor="let meeting of meetingService.meetings">
+  <app-card [meeting]="meeting"></app-card>
+</div>
+

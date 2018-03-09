@@ -1,0 +1,12 @@
+<div class="card">
+  <div class="header">
+    <app-time></app-time>
+    <h2>{{meetingsService.roomName}}</h2>
+  </div>
+  <app-current-status [isAvailable]="meetingsService.isAvailableNow()"></app-current-status>
+  <app-event-card [event]="meetingsService.getCurrentEvent()"></app-event-card>
+  <label>Далее</label>
+  <span *ngIf="meetingsService.getNextEvent() == null">Свободна</span>
+  <app-event-card [event]="meetingsService.getNextEvent()"></app-event-card>
+  <button>Забронировать на сегодня</button>
+</div>
