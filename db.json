@@ -1,0 +1,90 @@
+{
+  "rooms": [
+    {
+        "Name": "Чилаут зона",
+        "Email": "chillout-zone@sibedge.com"
+    },
+    {
+        "Name": "Малая переговорка",
+        "Email": "small-meeting-room@sibedge.com"
+    },
+    {
+        "Name": "Кабинет директора",
+        "Email": "director's-office@sibedge.com"
+    },
+    {
+        "Name": "Большая переговорка",
+        "Email": "large-meeting-room@sibedge.com"
+    }
+],
+"room":
+{
+    "Name": "Большая переговорка",
+    "Email": "large-meeting-room@sibedge.com"
+},
+"meetings":[
+    {
+        "Owner": "Иванов АО",
+        "StartDate": "2018-03-10T22:00:00+07:00",
+        "EndDate": "2018-03-10T22:01:00+07:00"
+    },
+    {
+        "Owner": "Иванов АО",
+        "StartDate": "2018-03-10T22:02:00+07:00",
+        "EndDate": "2018-03-10T22:04:00+07:00"
+    },
+    {
+        "Owner": "Иванов АО",
+        "StartDate": "2018-03-10T22:04:00+07:00",
+        "EndDate": "2018-03-10T22:10:00+07:00"
+    },
+    {
+        "Owner": "Иванов АО",
+        "StartDate": "2018-03-10T22:10:00+07:00",
+        "EndDate": "2018-03-10T22:15:00+07:00"
+    },
+    {
+        "Owner": "Иванов АО",
+        "StartDate": "2018-03-10T22:22:00+07:00",
+        "EndDate": "2018-03-10T22:24:00+07:00"
+    },
+    {
+        "Owner": "Иванов АО",
+        "StartDate": "2018-03-10T22:24:00+07:00",
+        "EndDate": "2018-03-10T22:30:00+07:00"
+    },
+    {
+        "Owner": "Иванов АО",
+        "StartDate": "2018-03-10T22:30:00+07:00",
+        "EndDate": "2018-03-10T22:35:00+07:00"
+    },
+    {
+        "Owner": "Иванов АО",
+        "StartDate": "2018-03-10T22:30:00+07:00",
+        "EndDate": "2018-03-10T23:35:00+07:00"
+    },
+    {
+        "Owner": "Иванов АО",
+        "StartDate": "2018-03-10T23:37:00+07:00",
+        "EndDate": "2018-03-10T23:50:00+07:00"
+    }
+],
+"users":[
+    {
+        "Surname": "FadeevAS",
+        "Email": "FadeevAS@sibedge.com"
+    },
+    {
+        "Surname": "FedulovIV",
+        "Email": "FedulovIV@sibedge.com"
+    },
+    {
+        "Surname": "FedyashovRN",
+        "Email": "FedyashovRN@sibedge.com"
+    },
+    {
+        "Surname": "FeldshtejnAA",
+        "Email": "FeldshtejnAA@sibedge.com"
+    }
+]
+}

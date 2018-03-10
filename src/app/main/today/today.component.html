@@ -1,5 +1,14 @@
-<h1>Сегодня</h1>
-<div class="events" *ngFor="let meeting of meetingService.meetings">
-  <app-card [meeting]="meeting"></app-card>
-</div>
+<div class="wrapper">
+  <div class="header-today">Сегодня</div>
+  <div class="events">
+    <!--Добавлять класс future-event для будущих событий-->
 
+    <!-- Блок для свободного времени, если удастся вычислить время между событиями здесь -->
+    <div class="free-time">
+      <span>duration</span>
+    </div>
+
+
+    <app-card class="event" *ngFor="let meeting of meetingService.meetings" [meeting]="meeting"></app-card>
+  </div>
+</div>

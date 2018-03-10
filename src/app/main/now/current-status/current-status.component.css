@@ -1,0 +1,18 @@
+p {
+  margin: 50px auto;
+  width: 300px;
+  height: 300px;
+  line-height: 300px;
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  border-radius: 50%;
+}
+
+.free {
+  background-color: green;
+}
+
+.not-free {
+  background-color: firebrick;
+}

@@ -1,0 +1,35 @@
+.card {
+  padding-bottom: 1px;
+}
+
+.room-name {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  background-color: mediumseagreen;
+  margin: 0;
+}
+
+.horizontal-line {
+  width: calc(100% - 40px);
+  margin: 0 20px;
+  border-top: black 1px dashed;
+}
+
+.next-event {
+  font-size: 20px;
+  padding: 10px 20px;
+}
+
+.next-event + span {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+}
