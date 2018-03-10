@@ -1,11 +1,14 @@
-<div *ngIf="event != undefined">
-  <p>
-    Owner: {{ event['Owner'] }}
-  </p>
-  <p>
-    Start: {{ event['StartDate'] }}
-  </p>
-  <p>
-    End: {{ event['EndDate'] }}
-  </p>
+<div *ngIf="event != undefined" class="event-card" [ngClass]="isRed == true ? 'bad' : 'good'">
+  <div class="row">
+    <div class="col s3 time">
+      <app-get-time [dateString]="event['StartDate']"></app-get-time>
+      <br>
+      <app-get-time [dateString]="event['EndDate']"></app-get-time>
+    </div>
+    <div class="col s9 owner">
+      <p>
+        {{ event['Owner'] }}
+      </p>
+    </div>
+  </div>
 </div>
