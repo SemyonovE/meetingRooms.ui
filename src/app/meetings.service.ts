@@ -100,6 +100,9 @@ export class MeetingsService {
       } else {
         callback();
       }
+    }, err => {
+      console.error(err);
+      setTimeout(() => this.updateMeetings(callback), 1000 * 30);
     });
   }
 }

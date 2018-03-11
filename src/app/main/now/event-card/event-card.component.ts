@@ -7,7 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class EventCardComponent implements OnInit {
   @Input() event;
-  @Input() color;
+  @Input() isRed = false;
 
   constructor() {
   }

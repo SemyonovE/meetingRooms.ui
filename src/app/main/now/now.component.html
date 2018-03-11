@@ -4,10 +4,16 @@
     <h2 class="room-name">{{meetingsService.roomName}}</h2>
   </div>
   <app-current-status [isAvailable]="meetingsService.isAvailableNow()"></app-current-status>
-  <app-event-card [event]="meetingsService.getCurrentEvent()"></app-event-card>
-  <hr class="horizontal-line">
-  <label class="next-event">Далее</label>
-  <span *ngIf="meetingsService.getNextEvent() == null">Свободна</span>
+  <app-event-card [event]="meetingsService.getCurrentEvent()" [isRed]="true"></app-event-card>
+  <h3 class="next-event">Далее:</h3>
+  <p *ngIf="meetingsService.getNextEvent() == null" class="available">Свободна</p>
   <app-event-card [event]="meetingsService.getNextEvent()"></app-event-card>
-  <button class="btn green">Забронировать на сегодня</button>
+  <div class="add-event">
+    <a class="waves-effect waves-light btn blue accent-3">
+      <i class="small material-icons">add_circle</i>Забронировать на сегодня
+    </a>
+    <!--<button class="btn blue accent-3">-->
+    <!--<i class="small material-icons">add_circle</i>Забронировать на сегодня-->
+    <!--</button>-->
+  </div>
 </div>

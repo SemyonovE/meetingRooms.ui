@@ -1,1 +1,3 @@
-<p>{{ time.getHours() }}:{{ time.getMinutes() < 10 ? '0' + time.getMinutes(): time.getMinutes() }}</p>
+<p>
+  {{ time.getHours() }}<span>:{{ time.getMinutes() < 10 ? '0' + time.getMinutes(): time.getMinutes() }}</span>
+</p>

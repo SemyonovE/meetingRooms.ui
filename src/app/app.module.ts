@@ -15,6 +15,7 @@ import {MeetingsService} from './meetings.service';
 import {RouterModule, Routes} from '@angular/router';
 import {MainComponent} from './main/main.component';
 import {EventCardComponent} from './main/now/event-card/event-card.component';
+import {GetTimeComponent} from './main/get-time/get-time.component';
 
 const appRoutes: Routes = [
   {path: 'room', component: MainComponent},
@@ -31,7 +32,8 @@ const appRoutes: Routes = [
     CardComponent,
     TimelineComponent,
     MainComponent,
-    EventCardComponent
+    EventCardComponent,
+    GetTimeComponent
   ],
   imports: [
     BrowserModule,

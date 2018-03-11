@@ -1,3 +1,31 @@
 p {
 padding: 0 20px;
 }
+
+.owner {
+  height: 100%;
+  margin: 0;
+  text-align: right;
+}
+
+.event-card {
+  color: white;
+}
+
+.bad {
+  background-color: #F06292;
+}
+
+.good {
+  background-color: #26A69A;
+}
+
+.time {
+  margin: 10px 0 10px 0;
+  padding-left: 25px;
+  border-right: white solid 1px;
+}
+
+.time * {
+  float: right;
+}
