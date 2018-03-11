@@ -3,12 +3,10 @@
   <div class="events">
     <!--Добавлять класс future-event для будущих событий-->
 
-    <!-- Блок для свободного времени, если удастся вычислить время между событиями здесь -->
-    <div class="free-time">
-      <span>duration</span>
-    </div>
-
-
-    <app-card class="event" *ngFor="let meeting of meetingService.meetings" [meeting]="meeting"></app-card>
+    <app-card
+      class="event" *ngFor="let meeting of meetingService.meetings; let i = index"
+      [meeting]="meeting"
+      [freeDuration]="getDuration(i)"
+    ></app-card>
   </div>
 </div>

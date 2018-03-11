@@ -1,3 +1,23 @@
-<span>Owner: {{meeting['Owner']}}</span>
-<span>StartTime: {{meeting['StartDate']}}</span>
-<span>EndTime: {{meeting['EndDate']}}</span>
+<!-- <span>Owner: {{meeting['Owner']}}</span>
+<span>StartTime: {{}}</span>
+<span>EndTime: {{}}</span> -->
+<div *ngIf="freeDuration >= 15">
+    <div class="free-time">
+        <span>{{ freeDuration }} мин.</span>
+      </div>
+</div>
+<div class="event-card" [ngClass]="+time > meetingSeconds ? 'bad': 'good'">
+    <div class="row">
+      <div class="col s3 time">
+        <app-get-time [dateString]="meeting['StartDate']"></app-get-time>
+        <br>
+        <app-get-time [dateString]="meeting['EndDate']"></app-get-time>
+      </div>
+      <div class="col s9 owner">
+        <p>
+          {{ meeting['Owner'] }}
+        </p>
+      </div>
+    </div>
+  </div>
+  
